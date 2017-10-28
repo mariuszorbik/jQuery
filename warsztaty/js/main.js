@@ -14,8 +14,9 @@ $(function() {
     slideShow.css('width', slideCount + '00%');
     
     slideShow.find('.single-slide').each(function(index) {
+//        console.log($(this));
+        $(this).css({'width' : slideWidth + '%', 'margin-left' : index * slideWidth + '%'});
         console.log($(this));
-        $(this).css({'width' : slideWidth + '%', 'margin-left' : 'index * slideWidth' + '%'});
         });
     
     function slide(newSlideIndex) {
